@@ -1,0 +1,29 @@
+{
+  "name": "artyoms_brainteasers",
+  "version": "1.0.0",
+  "description": "little brainteasers for you",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinnityom/project-lvl1-s450.git"
+  },
+  "keywords": [
+    "braingames",
+    "brainteasers",
+    "games"
+  ],
+  "author": "Artyom Sukharev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinnityom/project-lvl1-s450/issues"
+  },
+  "homepage": "https://github.com/vinnityom/project-lvl1-s450#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4"
+  }
+}
