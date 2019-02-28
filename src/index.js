@@ -1,9 +1,8 @@
 import readlineSync from 'readline-sync';
 
 const getName = () => readlineSync.question('May I have your name? ');
-export const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
-export const beginGame = (getGameData, description) => {
+export default (getGameData, description) => {
   console.log('Welcome to the Brain Games!');
   console.log(description);
   const user = getName();
