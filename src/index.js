@@ -9,26 +9,24 @@ export default (getGameData, description) => {
   console.log(`Hello ${user}!`);
   const numberOfRounds = 3;
 
-  const startRound = (roundCounter) => {
+  const hadWon = (roundCounter = 1) => {
     const { question, answer: correctAnswer } = getGameData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      return null;
+      return false;
     }
 
     console.log('Correct!');
     if (roundCounter < numberOfRounds) {
-      return startRound(roundCounter + 1);
+      return hadWon(roundCounter + 1);
     }
-    return roundCounter;
+    return true;
   };
 
-  const winningStreak = startRound(1);
-
-  if (winningStreak === numberOfRounds) {
+  if (hadWon()) {
     console.log(`Congratulations, ${user}!`);
   } else {
     console.log(`Let's try again, ${user}!`);
