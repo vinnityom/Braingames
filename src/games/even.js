@@ -1,4 +1,5 @@
-import { getRandomInt, beginGame } from '..';
+import beginGame from '..';
+import getRandomInt from '../utils';
 
 const isEven = num => num % 2 === 0;
 const description = 'Answer "yes" if number even otherwise answer "no".';
