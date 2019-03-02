@@ -26,7 +26,7 @@ const generate = () => {
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
 
   return {
-    question: `${number}`,
+    question: number.toString(),
     correctAnswer,
   };
 };

@@ -24,7 +24,7 @@ const generate = () => {
   const question = progression.slice();
   question[hiddenElementPosition] = '..';
 
-  const correctAnswer = `${progression[hiddenElementPosition]}`;
+  const correctAnswer = progression[hiddenElementPosition].toString();
 
   return {
     question: question.join(' '),

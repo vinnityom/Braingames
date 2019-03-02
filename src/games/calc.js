@@ -31,7 +31,7 @@ const generate = () => {
   const { sign, result } = getExpression(getRandomInt(1, 4), firstNumber, secondNumber);
 
   const question = `${firstNumber} ${sign} ${secondNumber}`;
-  const correctAnswer = `${result}`;
+  const correctAnswer = result.toString();
 
   return {
     question,

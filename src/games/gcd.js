@@ -23,11 +23,11 @@ const generate = () => {
   const first = getRandomInt(1, 100);
   const second = getRandomInt(1, 100);
 
-  const gcd = getGCD(first, second);
+  const correctAnswer = getGCD(first, second).toString();
 
   return {
     question: `${first} ${second}`,
-    correctAnswer: `${gcd}`,
+    correctAnswer,
   };
 };
 
