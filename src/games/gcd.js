@@ -27,7 +27,7 @@ const generate = () => {
 
   return {
     question: `${first} ${second}`,
-    answer: `${gcd}`,
+    correctAnswer: `${gcd}`,
   };
 };
 

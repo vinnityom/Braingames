@@ -31,11 +31,11 @@ const generate = () => {
   const { sign, result } = getExpression(getRandomInt(1, 4), firstNumber, secondNumber);
 
   const question = `${firstNumber} ${sign} ${secondNumber}`;
-  const answer = `${result}`;
+  const correctAnswer = `${result}`;
 
   return {
     question,
-    answer,
+    correctAnswer,
   };
 };
 

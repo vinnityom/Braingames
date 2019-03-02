@@ -10,7 +10,7 @@ export default (getGameData, description) => {
   const numberOfRounds = 3;
 
   const areAnswersRight = (roundCounter) => {
-    const { question, answer: correctAnswer } = getGameData();
+    const { question, correctAnswer } = getGameData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 

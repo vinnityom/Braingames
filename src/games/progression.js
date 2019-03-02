@@ -24,11 +24,11 @@ const generate = () => {
   const question = progression.slice();
   question[hiddenElementPosition] = '..';
 
-  const answer = `${progression[hiddenElementPosition]}`;
+  const correctAnswer = `${progression[hiddenElementPosition]}`;
 
   return {
     question: question.join(' '),
-    answer,
+    correctAnswer,
   };
 };
 
