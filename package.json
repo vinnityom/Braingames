@@ -17,7 +17,8 @@
   "keywords": [
     "braingames",
     "brainteasers",
-    "games"
+    "games",
+    "cli"
   ],
   "bin": {
     "brain-even": "dist/bin/brain-even.js",
